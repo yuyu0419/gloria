@@ -14,7 +14,7 @@ $(function () {//start
         setTimeout(function () {
             $('.pop').css('opacity', '0')
             $('.pop').removeClass('active');
-        }, 250)
+        }, 200)
     })
 
 });//end
