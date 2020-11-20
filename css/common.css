@@ -104,7 +104,7 @@ header .burger:hover span {
   left: 0%;
   -webkit-transition: .5s;
   transition: .5s;
-  z-index: -100;
+  z-index: -200;
 }
 
 .pop .pop_list {
