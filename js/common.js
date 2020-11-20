@@ -7,10 +7,13 @@ $(function () {//start
         setTimeout(function () {
             $('.pop').css('opacity', '1')
             $('.pop').addClass('active');
-        }, 400)
+        }, 200)
+        if ($('.pop').className == 'active') {
+            $('body').css('opacity', '0.5')
+        }
     }
 
-    $('.x_btn').on('click', function () {
+    $('.close_btn p').on('click', function () {
         setTimeout(function () {
             $('.pop').css('opacity', '0')
             $('.pop').removeClass('active');
