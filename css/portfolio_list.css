@@ -105,7 +105,7 @@ header .burger:hover span {
   left: 0%;
   -webkit-transition: .5s;
   transition: .5s;
-  z-index: -100;
+  z-index: -200;
 }
 
 .pop .pop_list {
@@ -507,28 +507,38 @@ article {
   background-color: #ffae00;
 }
 
-.hyeonha img {
-  width: 100%;
-}
-
 .socar {
   width: 100%;
   height: 100vh;
   font-size: 0;
+  position: relative;
 }
 
 .socar .vdo video {
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1920px;
+  height: 100vh;
 }
 
 .broom {
   width: 100%;
   height: 100vh;
   font-size: 0;
+  position: relative;
 }
 
 .broom img {
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1920px;
+  height: 100vh;
 }
 
 .list {
