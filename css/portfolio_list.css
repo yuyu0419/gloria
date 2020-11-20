@@ -508,7 +508,7 @@ article {
 }
 
 .socar {
-  width: 100%;
+  width: 1920px;
   height: 100vh;
   font-size: 0;
   position: relative;
@@ -520,8 +520,6 @@ article {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 1920px;
-  height: 100vh;
 }
 
 .broom {
