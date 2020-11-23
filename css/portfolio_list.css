@@ -332,12 +332,12 @@ body {
           transform: rotate(-15deg);
 }
 
-.pop_all .all .close_btn {
+.pop_all .all .closeBtn {
   width: 100%;
   margin-top: 20%;
 }
 
-.pop_all .all .close_btn p {
+.pop_all .all .closeBtn p {
   opacity: 0.5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -348,7 +348,7 @@ body {
   font-size: 3rem;
 }
 
-.pop_all .all .close_btn p:hover {
+.pop_all .all .closeBtn p:hover {
   opacity: 1;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
