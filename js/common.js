@@ -4,20 +4,11 @@ $(function () {//start
     $('.burger').on('click', menuOpen);
 
     function menuOpen() {
-        setTimeout(function () {
-            $('.pop').css('opacity', '1')
-            $('.pop').addClass('active');
-        }, 200)
-        if ($('.pop').className == 'active') {
-            $('body').css('opacity', '0.5')
-        }
+        $('.pop').addClass('active');
     }
 
     $('.close_btn p').on('click', function () {
-        setTimeout(function () {
-            $('.pop').css('opacity', '0')
-            $('.pop').removeClass('active');
-        }, 200)
+        $('.pop').removeClass('active');
     })
 
 });//end

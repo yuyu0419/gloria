@@ -95,9 +95,9 @@ header .burger:hover span {
 
 .pop {
   width: 0%;
-  height: 0vh;
+  height: 100vh;
   position: fixed;
-  right: 0%;
+  right: 0;
   top: 0;
   -webkit-transition: .5s;
   transition: .5s;
@@ -110,7 +110,7 @@ header .burger:hover span {
   right: 0%;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #0b5121;
   -webkit-transition: .5s;
   transition: .5s;
   margin: 0 auto;
@@ -127,7 +127,7 @@ header .burger:hover span {
   cursor: pointer;
   text-align: right;
   font-size: 3rem;
-  color: #222222;
+  color: #fff;
   font-family: "Fugaz One", cursive;
   opacity: .3;
   -webkit-transition: .5s;
@@ -136,6 +136,8 @@ header .burger:hover span {
 
 .pop .pop_wrap .close_btn p:hover {
   opacity: 1;
+  color: #ffae00;
+  text-shadow: 5px -5px 0 #fff;
 }
 
 .pop .pop_wrap .pop_list {
@@ -152,7 +154,7 @@ header .burger:hover span {
   text-align: left;
   display: block;
   font-size: 7rem;
-  color: #222222;
+  color: #fff;
   opacity: .3;
   font-family: "Fugaz One", cursive;
   -webkit-transform-origin: left;
@@ -160,29 +162,29 @@ header .burger:hover span {
 }
 
 .pop .pop_wrap .pop_list a:hover {
+  text-shadow: 10px -10px 0 #fff;
+  color: #ffae00;
   opacity: 1;
 }
 
 .pop.active {
-  width: 30%;
-  height: 0vh;
-  position: fixed;
-  right: 0%;
-  top: 0;
+  width: 100%;
+  height: 100vh;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 200;
 }
 
 .pop.active .pop_wrap {
+  width: 30%;
   position: absolute;
   top: 0;
   right: 0%;
   -webkit-transition: .5s;
   transition: .5s;
   margin: 0 auto;
-  -webkit-animation: burger .65s ease-in-out;
-          animation: burger .65s ease-in-out;
+  -webkit-animation: burger .5s ease-in-out;
+          animation: burger .5s ease-in-out;
 }
 
 .pop.active .pop_list {
