@@ -9,6 +9,12 @@ window.addEventListener('DOMContentLoaded', function () {
         mouseClear = setTimeout(articleMove, 100, e);
     });
 
+    //firefox
+    window.addEventListener('DOMMouseScroll', function (e) {
+        clearTimeout(mouseClear);
+        mouseClear = setTimeout(articleMove, 100, e);
+    });
+
     function articleMove(e) {
         var list = document.querySelector('.list'),
             listA = document.querySelectorAll('.list a'),
@@ -17,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function () {
             num50 = 50,
             idx;
 
-        if (e.wheelDeltaY < 0) {
+        if (e.wheelDeltaY < 0 || e.detail > 0) {
             //마우스휠이 두번 까딱함. 
             if (i < 2) { i++ }
         } else {
@@ -38,23 +44,22 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     //팝업열기
-    var openBtn = document.querySelector('.all_portfolio');
-    openBtn.addEventListener('click', openPop)
-    function openPop() {
-        var pop = document.querySelector('.pop_all'),
-            close = document.querySelector('.close_btn')
+    var openBtn = document.querySelector('.all_portfolio'),
+        pop_all = document.querySelector('.pop_all');
+    var closeBtn = document.querySelector('.closeBtn');
 
-        pop.classList.add('active');
-        pop.style = "opacity:1"
-
-        close.addEventListener('click', function () {
-
-            setTimeout(function () {
-                pop.style = "opacity:0"
-                pop.classList.remove('active');
-            }, 100);
-        })
+    openBtn.addEventListener('click', popOpenClose)
+    function popOpenClose() {
+        pop_all.style = 'opacity:1'
+        pop_all.classList.add('active');
     }
+
+    closeBtn.addEventListener('click', function () {
+        setTimeout(function () {
+            pop_all.style = 'opacity:0'
+            pop_all.classList.remove('active');
+        }, 200)
+    })
 
     //파일 로드
     $(function () {
@@ -147,22 +152,18 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
 
                 var allList = document.querySelectorAll('.all_list a'),
-                    pop = document.querySelector('.pop_all'),
                     color = ['#ffae00', '#00b8ff', '#0059e9']
 
                 allList.forEach(function (a, i) {
                     allList[i].addEventListener('mouseover', function (e) {
                         if (a) {
-                            pop.style = 'background-color:' + color[i]
+                            pop_all.style = 'background-color:' + color[i]
                         }
                     })
                     allList[i].addEventListener('mouseleave', function (e) {
-                        pop.style = 'background-color::#0b5121'
+                        pop_all.style = 'background-color:#0b5121'
                     })
                 })
-
-
-
 
             }//success
         })//ajax end

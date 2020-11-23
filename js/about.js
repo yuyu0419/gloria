@@ -12,10 +12,16 @@ window.addEventListener('DOMContentLoaded', function () {
         mouseClear = setTimeout(aboutMove, 100, e);
     });
 
+    //firefox
+    window.addEventListener('DOMMouseScroll', function (e) {
+        clearTimeout(mouseClear);
+        mouseClear = setTimeout(aboutMove, 100, e);
+    });
+
     function aboutMove(e) {
         num25 = 25;
 
-        if (e.wheelDelta < 0) {
+        if (e.wheelDelta < 0 || e.detail > 0) {
             if (i < 3) { i++ }
         } else {
             if (i > 0) { i-- }
@@ -35,11 +41,18 @@ window.addEventListener('DOMContentLoaded', function () {
         timeClear = setTimeout(sectionMove, 200, e)
     });
 
+    //firefox
+    myself.addEventListener('DOMMouseScroll', function (e) {
+        e.stopPropagation();
+        clearTimeout(timeClear)
+        timeClear = setTimeout(sectionMove, 200, e)
+    });
+
     function sectionMove(e) {
         var sectionActive = document.querySelector('.about2 section.active'),
             section = document.querySelectorAll('.about2 section');
 
-        if (e.wheelDelta < 0) {
+        if (e.wheelDelta < 0 || e.detail > 0) {
             if (idx < section.length - 1) {
                 idx++
                 setTimeout(function () {
