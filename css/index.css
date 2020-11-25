@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
 @font-face {
@@ -260,6 +259,125 @@ header .burger:hover span {
   }
 }
 
+/* PC Desktop (1043~1400) */
+@media all and (min-width: 1043px) and (max-width: 1400px) {
+  header {
+    margin: 3% auto;
+  }
+  header .home {
+    width: 10%;
+  }
+  header .home img {
+    width: 100%;
+  }
+  .pop {
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 200;
+  }
+  .pop .pop_wrap .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+  }
+  .pop .pop_wrap .pop_list a {
+    margin: 10% 0;
+    font-size: 6rem;
+  }
+  .pop.active .pop_wrap {
+    width: 40%;
+  }
+  .pop.active .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+  }
+}
+
+/* Tablet (688~1042) */
+@media all and (min-width: 688px) and (max-width: 1042px) {
+  header {
+    margin: 3% auto;
+  }
+  header .home {
+    width: 12%;
+  }
+  header .home img {
+    width: 100%;
+  }
+  .pop .pop_wrap .close_btn {
+    margin: 5% auto;
+    -webkit-transform: translate(70%, 0);
+            transform: translate(70%, 0);
+  }
+  .pop .pop_wrap .close_btn p {
+    width: 10%;
+    font-size: 2.6rem;
+  }
+  .pop .pop_wrap .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+  .pop .pop_wrap .pop_list a {
+    margin: 5% 0;
+    font-size: 5rem;
+  }
+  .pop.active .pop_wrap {
+    width: 50%;
+  }
+  .pop.active .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+}
+
+/* Mobile Device (0~687) */
+@media all and (max-width: 687px) {
+  header {
+    margin: 5% auto;
+  }
+  header .home {
+    width: 20%;
+  }
+  header .burger {
+    width: 30px;
+    height: 30px;
+  }
+  .pop .pop_wrap .close_btn {
+    margin: 5% auto;
+    -webkit-transform: translate(70%, 0);
+            transform: translate(70%, 0);
+  }
+  .pop .pop_wrap .close_btn p {
+    font-size: 2.6rem;
+  }
+  .pop .pop_wrap .pop_list {
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+  .pop .pop_wrap .pop_list a {
+    font-size: 5rem;
+  }
+  .pop.active .pop_wrap {
+    width: 100%;
+  }
+  .pop.active .pop_list {
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+}
+
 /*
 .loading{
     width:100%;
@@ -399,32 +517,14 @@ header a img {
   opacity: 0;
 }
 
-@media all and (min-width: 1100px) and (max-width: 1400px) {
+/* PC Desktop (1043~1400) */
+@media all and (min-width: 1043px) and (max-width: 1400px) {
   .container .main_con .main_letter h2 {
-    font-size: 4rem;
+    font-size: 3.8rem;
+    line-height: 1.1;
   }
   .container .main_con .main_letter p {
-    color: #fff;
-    font-family: "Fugaz One", cursive;
-    font-size: 2.5rem;
-  }
-  .container .main_click a {
-    width: 9rem;
-    height: 9rem;
-  }
-  .container .main_click a p {
-    font-size: 2rem;
-  }
-}
-
-/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
-@media all and (min-width: 800px) and (max-width: 1099px) {
-  .container .main_con .main_letter h2 {
-    font-size: 3rem;
-    letter-spacing: -1px;
-  }
-  .container .main_con .main_letter p {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .container .main_click a {
     width: 8rem;
@@ -432,42 +532,45 @@ header a img {
   }
   .container .main_click a p {
     font-size: 2rem;
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%);
   }
 }
 
-/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
-@media all and (min-width: 480px) and (max-width: 799px) {
-  header a {
-    width: 100%;
-    margin: 0 auto;
-  }
-  header a img {
-    width: 100%;
+/* Tablet (688~1042) */
+@media all and (min-width: 688px) and (max-width: 1042px) {
+  .container .main_con {
+    width: 90%;
   }
   .container .main_con .main_letter h2 {
-    font-size: 2rem;
-    letter-spacing: -0.5px;
+    font-size: 3.4rem;
+    line-height: 1.1;
   }
   .container .main_con .main_letter p {
-    font-size: 1.5rem;
+    font-size: 2.6rem;
   }
   .container .main_click a {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
   }
   .container .main_click a p {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%);
   }
 }
 
-/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
-@media all and (max-width: 479px) {
+/* Mobile Device (0~687) */
+@media all and (max-width: 687px) {
+  .container .main_con {
+    width: 90%;
+  }
   .container .main_con .main_letter h2 {
-    font-size: 2rem;
-    letter-spacing: -0.5px;
+    font-size: 2.8rem;
+    line-height: 1.1;
   }
   .container .main_con .main_letter p {
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1;
   }
   .container .main_click a {
@@ -475,7 +578,9 @@ header a img {
     height: 6rem;
   }
   .container .main_click a p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
   }
 }
 /*# sourceMappingURL=index.css.map */

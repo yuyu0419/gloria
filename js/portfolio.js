@@ -2,36 +2,91 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //all 마우스휠 이벤트
     var mouseClear,
-        i = 0;
+        i = 0,
+        articles = document.querySelectorAll('.mine article'),
+        mql = window.matchMedia("screen and (max-width: 1042px)"),
+        list = document.querySelector('.list'),
+        listA = document.querySelectorAll('.list a'),
+        mine = document.querySelector('.mine'),
+        body = document.querySelector('body'),
+        num50 = 50,
+        resMsg;
 
+
+
+    //모바일 or PC 구분
+    mql.addListener(res);
+    function res(e) {
+        if (e.matches) {
+            //모바일
+            resMsg = 'mobile';
+        } else {
+            //PC
+            resMsg = 'pc';
+        }
+        articleMove(e)
+    }
+    res(mql);
+
+
+    //모바일 스크롤 이벤트
+    var mEvent = { y: 0, y2: 0, state: '' };
+
+    window.addEventListener('touchstart', tStart);
+    window.addEventListener('touchmove', tMove);
+    window.addEventListener('touchend', tEnd);
+
+    function tStart(e) {
+        mEvent.y = e.changedTouches[0].clientY;
+    }
+    function tMove(e) {
+        mEvent.y2 = e.changedTouches[0].clientY;
+    }
+    function tEnd(e) {
+        if (mEvent.y > mEvent.y2) {
+            if (i < 2) { i++ }
+        } else {
+            if (i > 0) { i-- }
+        }
+        articleMove();
+    }
+
+
+    //chrome,ex10,edge
     window.addEventListener('mousewheel', function (e) {
-        clearTimeout(mouseClear);
-        mouseClear = setTimeout(articleMove, 100, e);
+        time(e)
     });
 
     //firefox
     window.addEventListener('DOMMouseScroll', function (e) {
-        clearTimeout(mouseClear);
-        mouseClear = setTimeout(articleMove, 100, e);
+        time(e)
     });
 
-    function articleMove(e) {
-        var list = document.querySelector('.list'),
-            listA = document.querySelectorAll('.list a'),
-            mine = document.querySelector('.mine'),
-            num = 100,
-            num50 = 50,
-            idx;
 
-        if (e.wheelDeltaY < 0 || e.detail > 0) {
-            //마우스휠이 두번 까딱함. 
-            if (i < 2) { i++ }
-        } else {
-            //i는 2부터 작아짐. 2,1,0 i는 2~0 사이
-            if (i > 0) { i-- }
-        }
+    function time(e) {
+        clearTimeout(mouseClear);
+        mouseClear = setTimeout(function () {
+            if (e.wheelDeltaY < 0 || e.detail > 0) {
+                if (i < 2) { i++ }
+            } else {
+                if (i > 0) { i-- }
+            }
+            articleMove();
+        }, 100, e);
+    }
+
+    function articleMove(e) {
+        var num = 100,
+            idx;
         mine.style = "transform:translate(0%," + num * -i + "%);"
         list.style = "transform:translate(" + num50 * -i + "%, 0%);"
+
+        listAEeach();
+    }
+
+    //a태그 active 함수
+    function listAEeach() {
+        listA = document.querySelectorAll('.list a')
 
         listA.forEach(function (v) {
             idx = v.dataset.num;
@@ -42,6 +97,13 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         })
     }
+
+
+
+
+
+
+
 
     //팝업열기
     var openBtn = document.querySelector('.all_portfolio'),

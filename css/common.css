@@ -257,4 +257,123 @@ header .burger:hover span {
             clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   }
 }
+
+/* PC Desktop (1043~1400) */
+@media all and (min-width: 1043px) and (max-width: 1400px) {
+  header {
+    margin: 3% auto;
+  }
+  header .home {
+    width: 10%;
+  }
+  header .home img {
+    width: 100%;
+  }
+  .pop {
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 200;
+  }
+  .pop .pop_wrap .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+  }
+  .pop .pop_wrap .pop_list a {
+    margin: 10% 0;
+    font-size: 6rem;
+  }
+  .pop.active .pop_wrap {
+    width: 40%;
+  }
+  .pop.active .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+  }
+}
+
+/* Tablet (688~1042) */
+@media all and (min-width: 688px) and (max-width: 1042px) {
+  header {
+    margin: 3% auto;
+  }
+  header .home {
+    width: 12%;
+  }
+  header .home img {
+    width: 100%;
+  }
+  .pop .pop_wrap .close_btn {
+    margin: 5% auto;
+    -webkit-transform: translate(70%, 0);
+            transform: translate(70%, 0);
+  }
+  .pop .pop_wrap .close_btn p {
+    width: 10%;
+    font-size: 2.6rem;
+  }
+  .pop .pop_wrap .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+  .pop .pop_wrap .pop_list a {
+    margin: 5% 0;
+    font-size: 5rem;
+  }
+  .pop.active .pop_wrap {
+    width: 50%;
+  }
+  .pop.active .pop_list {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+}
+
+/* Mobile Device (0~687) */
+@media all and (max-width: 687px) {
+  header {
+    margin: 5% auto;
+  }
+  header .home {
+    width: 20%;
+  }
+  header .burger {
+    width: 30px;
+    height: 30px;
+  }
+  .pop .pop_wrap .close_btn {
+    margin: 5% auto;
+    -webkit-transform: translate(70%, 0);
+            transform: translate(70%, 0);
+  }
+  .pop .pop_wrap .close_btn p {
+    font-size: 2.6rem;
+  }
+  .pop .pop_wrap .pop_list {
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+  .pop .pop_wrap .pop_list a {
+    font-size: 5rem;
+  }
+  .pop.active .pop_wrap {
+    width: 100%;
+  }
+  .pop.active .pop_list {
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+}
 /*# sourceMappingURL=common.css.map */
