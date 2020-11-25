@@ -789,7 +789,7 @@ article {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: 50;
-  background: url("../img/scroll_down.png") center no-repeat;
+  background: url("/../img/scroll_down.png") center no-repeat;
   background-size: 100%;
   -webkit-animation: scrollMove 1s infinite linear;
           animation: scrollMove 1s infinite linear;
@@ -826,7 +826,7 @@ article {
 }
 
 article:nth-of-type(3) .scroll_img {
-  background: url("../img/scroll_up.png") center no-repeat;
+  background: url("/../img/scroll_up.png") center no-repeat;
   background-size: 100%;
 }
 
