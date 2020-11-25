@@ -40,13 +40,12 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     function tEnd(e) {
         if (mEvent.y > mEvent.y2) {
-            if (i < 2) { i++ }
+            if (i < 3) { i++ }
         } else {
             if (i > 0) { i-- }
         }
         aboutMove();
     }
-
 
     window.addEventListener('mousewheel', function (e) {
         aboutSetTieme(e)
