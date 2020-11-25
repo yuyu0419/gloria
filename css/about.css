@@ -1427,7 +1427,35 @@ article {
     font-size: 1.4rem;
   }
   .soft_skills {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+    margin: 5% auto;
+  }
+  .soft_skills .soft {
+    width: 70%;
+  }
+  .soft_skills .soft h4 {
+    font-size: 1.8rem;
+    color: #222222;
+  }
+  .soft_skills .soft p {
+    text-align: left;
+    font-family: "GmarketSansMedium";
+    font-size: 1.4rem;
+    color: #949494;
+  }
+  .soft_skills .img_con {
+    width: 30%;
+  }
+  .soft_skills .img_con img {
+    width: 25%;
   }
   .last .last_pack {
     height: 100%;
