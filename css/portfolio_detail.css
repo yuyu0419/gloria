@@ -1259,8 +1259,8 @@ div {
     margin-left: 0%;
     width: 90%;
     margin: 0 auto;
-    -webkit-transform: translate(0%, 10%);
-            transform: translate(0%, 10%);
+    -webkit-transform: translate(0%, 20%);
+            transform: translate(0%, 20%);
     -webkit-animation: show 1s ease-in-out normal;
             animation: show 1s ease-in-out normal;
   }
