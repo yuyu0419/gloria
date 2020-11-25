@@ -377,6 +377,10 @@ header .burger:hover span {
   }
 }
 
+div {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -1212,7 +1216,7 @@ header .burger:hover span {
 }
 
 /* Mobile Device (0~687) */
-@media all and (min-width: 360px) and (max-width: 687px) {
+@media all and (max-width: 687px) {
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1261,14 +1265,14 @@ header .burger:hover span {
             animation: show 1s ease-in-out normal;
   }
   .wrapper .hh_left .detail h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 1;
   }
   .wrapper .hh_left .detail h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .wrapper .hh_left .detail p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: 8%;
   }
   .wrapper .hh_left .detail a {
@@ -1344,7 +1348,7 @@ header .burger:hover span {
   }
   .wrapper.column .color {
     width: 100%;
-    margin: 10% auto;
+    margin: 5% auto;
   }
   .wrapper.column .color .color_system {
     display: -webkit-box;
@@ -1362,12 +1366,12 @@ header .burger:hover span {
     width: 100%;
   }
   .wrapper.column .color .color_system .color_left h4 {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .wrapper.column .color .color_system .color_left p {
     text-align: left;
     color: #949494;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.3;
   }
   .wrapper.column .color .color_system .color_right {
@@ -1379,13 +1383,13 @@ header .burger:hover span {
   }
   .wrapper.column .font {
     width: 100%;
-    margin: 10% auto;
+    margin: 5% auto;
   }
   .wrapper.column .font .text_style h4 {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .wrapper.column .font .text_style p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.3;
   }
   .wrapper.column .font .text_img {
