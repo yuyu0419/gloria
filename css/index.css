@@ -563,6 +563,8 @@ header a img {
 /* Mobile Device (0~687) */
 @media all and (max-width: 687px) {
   .container .main_con {
+    -webkit-transform: translate(0%, 70%);
+            transform: translate(0%, 70%);
     width: 100%;
   }
   .container .main_con .main_letter h2 {
