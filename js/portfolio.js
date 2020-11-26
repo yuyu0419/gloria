@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function () {
         mEvent.y2 = e.changedTouches[0].clientY;
     }
     function tEnd(e) {
-        if (mEvent.y > mEvent.y2) {
+        if (mEvent.y > mEvent.y2 && Math.abs(mEvent.y - mEvent.y2) > 100) {
             if (i < 2) { i++ }
         } else {
             if (i > 0) { i-- }

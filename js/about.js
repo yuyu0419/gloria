@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
     res(mql);
 
 
-    //모바일 스크롤 이벤트
+    //모바일 터치 이벤트
     var mEvent = { y: 0, y2: 0, state: '' };
 
     window.addEventListener('touchstart', tStart);
@@ -39,10 +39,11 @@ window.addEventListener('DOMContentLoaded', function () {
         mEvent.y2 = e.changedTouches[0].clientY;
     }
     function tEnd(e) {
-        if (mEvent.y > mEvent.y2) {
-            if (i < 3) { i++ }
+        if (mEvent.y > mEvent.y2 && Math.abs(mEvent.y - mEvent.y2) > 100) {
+            if (i < 3) i++;
+            if (i == 2) skill();
         } else {
-            if (i > 0) { i-- }
+            if (i > 0) i--;
         }
         aboutMove();
     }
@@ -71,6 +72,20 @@ window.addEventListener('DOMContentLoaded', function () {
     function aboutMove(e) {
         num25 = 25;
         aboutMain.style = "transform:translate(0%," + num25 * -i + "%);"
+
+        var aa = document.querySelector('.myself').offsetTop;
+        console.log(aa)
+
+        if (resMsg == 'pc') {
+            if (window.event.type == 'click') { }
+            if (window.event.type == 'mousewheel') { }
+        } else {
+            console.log(window.event)
+            if (window.event.type == 'click') { }
+            if (window.event.type == 'touchend') {
+                console.log('touchend')
+            }
+        }
     }
 
     //두번째 아티클 마우스 이벤트
@@ -132,8 +147,7 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    aboutMain.style = "transform:translate(0%,0%)";
-    window.scrollTo(0, 0);
+    setTimeout(function () { window.scrollTo(0, 0); }, 100);
 
 
 });//end

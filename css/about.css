@@ -192,32 +192,6 @@ header .burger:hover span {
   margin: 0 auto;
   -webkit-transform: translate(0%, 50%);
           transform: translate(0%, 50%);
-  -webkit-animation: fade-in 0.75s linear;
-          animation: fade-in 0.75s linear;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes burger {
@@ -410,6 +384,14 @@ main {
   opacity: 0;
   -webkit-animation: fade-in 1s .8s forwards;
           animation: fade-in 1s .8s forwards;
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 @keyframes fade-in {
@@ -1436,7 +1418,7 @@ article {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 80%;
-    margin: 5% auto;
+    margin: 10% auto;
   }
   .soft_skills .soft {
     width: 60%;

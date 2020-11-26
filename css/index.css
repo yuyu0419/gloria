@@ -193,32 +193,6 @@ header .burger:hover span {
   margin: 0 auto;
   -webkit-transform: translate(0%, 50%);
           transform: translate(0%, 50%);
-  -webkit-animation: fade-in 0.75s linear;
-          animation: fade-in 0.75s linear;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes burger {
