@@ -1376,8 +1376,8 @@ article {
     display: block;
   }
   .container .skills_pack {
-    -webkit-transform: translate(0%, 5%);
-            transform: translate(0%, 5%);
+    -webkit-transform: translate(0%, 10%);
+            transform: translate(0%, 10%);
   }
   .container .skills_pack h3 {
     font-size: 2.6rem;
