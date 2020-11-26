@@ -784,6 +784,7 @@ article {
 
 .soft_skills .img_con {
   width: 40%;
+  margin-top: 3%;
 }
 
 .soft_skills .img_con img {
@@ -1389,8 +1390,8 @@ article {
     display: none;
   }
   .container .skills_pack ul {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1438,7 +1439,7 @@ article {
     margin: 5% auto;
   }
   .soft_skills .soft {
-    width: 70%;
+    width: 60%;
   }
   .soft_skills .soft h4 {
     font-size: 1.8rem;
@@ -1451,10 +1452,10 @@ article {
     color: #949494;
   }
   .soft_skills .img_con {
-    width: 30%;
+    width: 40%;
   }
   .soft_skills .img_con img {
-    width: 25%;
+    width: 30%;
   }
   .last .last_pack {
     height: 100%;
