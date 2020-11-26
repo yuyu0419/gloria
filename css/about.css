@@ -282,8 +282,6 @@ header .burger:hover span {
   .pop .pop_wrap .pop_list {
     width: 80%;
     margin: 0 auto;
-    -webkit-transform: translate(0%, 50%);
-            transform: translate(0%, 50%);
   }
   .pop .pop_wrap .pop_list a {
     margin: 10% 0;
@@ -295,8 +293,6 @@ header .burger:hover span {
   .pop.active .pop_list {
     width: 80%;
     margin: 0 auto;
-    -webkit-transform: translate(0%, 50%);
-            transform: translate(0%, 50%);
   }
 }
 
@@ -362,18 +358,18 @@ header .burger:hover span {
     font-size: 2.6rem;
   }
   .pop .pop_wrap .pop_list {
-    -webkit-transform: translate(0%, 100%);
-            transform: translate(0%, 100%);
+    -webkit-transform: translate(0%, 80%);
+            transform: translate(0%, 80%);
   }
   .pop .pop_wrap .pop_list a {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .pop.active .pop_wrap {
-    width: 100%;
+    width: 80%;
   }
   .pop.active .pop_list {
-    -webkit-transform: translate(0%, 100%);
-            transform: translate(0%, 100%);
+    -webkit-transform: translate(0%, 80%);
+            transform: translate(0%, 80%);
   }
 }
 
@@ -1380,13 +1376,16 @@ article {
     display: block;
   }
   .container .skills_pack {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
+    -webkit-transform: translate(0%, 5%);
+            transform: translate(0%, 5%);
   }
   .container .skills_pack h3 {
     font-size: 2.6rem;
   }
-  .container .skills_pack .skills {
+  .container .skills_pack .skills h4 {
+    font-size: 1.8rem;
+  }
+  .container .skills_pack .skills p {
     display: none;
   }
   .container .skills_pack ul {
