@@ -43,12 +43,16 @@ window.addEventListener('DOMContentLoaded', function () {
         mEvent.y2 = e.changedTouches[0].clientY;
     }
     function tEnd(e) {
-        if (mEvent.y > mEvent.y2 && Math.abs(mEvent.y - mEvent.y2) > 100) {
-            if (i < 2) { i++ }
-        } else {
-            if (i > 0) { i-- }
+        mEvent.y2 = e.changedTouches[0].clientY;
+
+        if (Math.abs(mEvent.y - mEvent.y2) > 100) {
+            if (mEvent.y > mEvent.y2) {
+                if (i < 2) i++;
+            } else {
+                if (i > 0) i--;
+            }
+            articleMove();
         }
-        articleMove();
     }
 
 
@@ -226,6 +230,7 @@ window.addEventListener('DOMContentLoaded', function () {
                         pop_all.style = 'background-color:#0b5121'
                     })
                 })
+                setTimeout(function () { window.scrollTo(0, 0); }, 100);
 
             }//success
         })//ajax end
