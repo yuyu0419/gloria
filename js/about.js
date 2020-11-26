@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function () {
             resMsg = 'pc';
         }
         aboutMove(e)
-        skill(e)
+        // skill(e)
     }
     res(mql);
 
@@ -95,6 +95,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 }, 300)
                 sectionActive.classList.remove('active')
             } else {
+                console.log('a')
                 i++;
                 winFun();
                 skill();
@@ -132,6 +133,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     aboutMain.style = "transform:translate(0%,0%)";
+    window.scrollTo(0, 0);
 
 
 });//end
