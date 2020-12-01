@@ -3,7 +3,7 @@
 <items>
     <body>
         <tit>hyeonha</tit>
-        <num>01</num>
+        <num>03</num>
         <thumb>img/back1.png</thumb>
         <logo>img/logo_gy.png</logo>
         <sumary>
@@ -57,7 +57,7 @@
                     language - html5, css3, java script
                     Cross Browsing - Ms Edge, Chrome, Firefox
             </p>
-            <a href="http://ria.dothome.co.kr/socar/index.html" target="_blank">visit web</a>
+            <a href="https://yuyu0419.github.io/socar/index.html" target="_blank">visit web</a>
             <em>
                 socar Renewal by hyeonha gwak
                 카셰어링 업체 쏘카 리뉴얼 페이지 입니다.
@@ -84,7 +84,7 @@
 
     <body>
         <tit>broom</tit>
-        <num>03</num>
+        <num>01</num>
         <thumb>img/br.jpg</thumb>
         <logo>img/broom.png</logo>
         <sumary>
@@ -95,10 +95,10 @@
                 duration - 2020. 08 ~ 2020. 08 (3 weeks)
                 Role - design &amp; Web Publishing 100%
                 type - pc web
-                language - html5, css3, java script
+                language - html5, css3, java script, webpack
                 Cross Browsing - Ms Edge, Chrome, Firefox
             </p>
-            <a href="http://ria.dothome.co.kr/broom/index.html" target="_blank">visit web</a>
+            <a href="https://yuyu0419.github.io/broom/index.html" target="_blank">visit web</a>
             <em>
                 broom Renewal by hyeonha gwak
                 청소업체 부름 리뉴얼 페이지 입니다.
