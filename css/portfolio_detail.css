@@ -761,14 +761,6 @@ div {
   .wrapper .hh_left .back p img {
     width: 100%;
   }
-  .wrapper .hh_left .detail {
-    margin-left: 10%;
-    width: 90%;
-    -webkit-transform: translate(0%, 40%);
-            transform: translate(0%, 40%);
-    -webkit-animation: show 1s ease-in-out normal;
-            animation: show 1s ease-in-out normal;
-  }
   .wrapper .hh_left .detail h2 {
     font-size: 4rem;
     line-height: 1;
@@ -792,40 +784,6 @@ div {
   .wrapper .hh_left .detail em {
     margin-right: 5%;
   }
-  @-webkit-keyframes show {
-    0% {
-      -webkit-transform: translate(0%, 55%);
-              transform: translate(0%, 55%);
-      opacity: 0;
-    }
-    50% {
-      -webkit-transform: translate(0%, 50%);
-              transform: translate(0%, 50%);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translate(0%, 40%);
-              transform: translate(0%, 40%);
-      opacity: 1;
-    }
-  }
-  @keyframes show {
-    0% {
-      -webkit-transform: translate(0%, 55%);
-              transform: translate(0%, 55%);
-      opacity: 0;
-    }
-    50% {
-      -webkit-transform: translate(0%, 50%);
-              transform: translate(0%, 50%);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translate(0%, 40%);
-              transform: translate(0%, 40%);
-      opacity: 1;
-    }
-  }
   .wrapper .hh_left.active {
     width: 100%;
   }
@@ -838,75 +796,6 @@ div {
   }
   .wrapper .hh_left.active .detail {
     opacity: 0;
-  }
-  .wrapper .hh_right {
-    width: 50%;
-    height: 100%;
-    -webkit-animation: right 0.8s linear normal;
-            animation: right 0.8s linear normal;
-  }
-  .wrapper .hh_right img {
-    margin-right: 5%;
-    margin-top: 30%;
-    -webkit-transform: translate(35%, 100%);
-            transform: translate(35%, 100%);
-    width: 60%;
-    -webkit-animation: imgOpa 1.5s ease normal;
-            animation: imgOpa 1.5s ease normal;
-  }
-  @-webkit-keyframes imgOpa {
-    0% {
-      opacity: 0;
-      -webkit-transform: translate(35%, 100%) scale(0);
-              transform: translate(35%, 100%) scale(0);
-    }
-    70% {
-      opacity: 0;
-      -webkit-transform: translate(35%, 100%) scale(0);
-              transform: translate(35%, 100%) scale(0);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translate(35%, 100%) scale(1);
-              transform: translate(35%, 100%) scale(1);
-    }
-  }
-  @keyframes imgOpa {
-    0% {
-      opacity: 0;
-      -webkit-transform: translate(35%, 100%) scale(0);
-              transform: translate(35%, 100%) scale(0);
-    }
-    70% {
-      opacity: 0;
-      -webkit-transform: translate(35%, 100%) scale(0);
-              transform: translate(35%, 100%) scale(0);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translate(35%, 100%) scale(1);
-              transform: translate(35%, 100%) scale(1);
-    }
-  }
-  @-webkit-keyframes right {
-    0% {
-      opacity: 0;
-      width: 0%;
-    }
-    100% {
-      opacity: 1;
-      width: 50%;
-    }
-  }
-  @keyframes right {
-    0% {
-      opacity: 0;
-      width: 0%;
-    }
-    100% {
-      opacity: 1;
-      width: 50%;
-    }
   }
   .wrapper.column {
     width: 90%;
@@ -1036,10 +925,6 @@ div {
     margin-left: 0%;
     width: 90%;
     margin: 0 auto;
-    -webkit-transform: translate(0%, 50%);
-            transform: translate(0%, 50%);
-    -webkit-animation: show 1s ease-in-out normal;
-            animation: show 1s ease-in-out normal;
   }
   .wrapper .hh_left .detail h2 {
     font-size: 3.8rem;
@@ -1057,46 +942,12 @@ div {
     width: 15%;
     margin: 0 auto;
     font-size: 1.6rem;
-    -webkit-transform: translate(0%, 50%);
-            transform: translate(0%, 50%);
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
     margin: 10% auto;
   }
   .wrapper .hh_left .detail em {
     display: none;
-  }
-  @-webkit-keyframes show {
-    0% {
-      -webkit-transform: translate(0%, 65%);
-              transform: translate(0%, 65%);
-      opacity: 0;
-    }
-    50% {
-      -webkit-transform: translate(0%, 60%);
-              transform: translate(0%, 60%);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translate(0%, 50%);
-              transform: translate(0%, 50%);
-      opacity: 1;
-    }
-  }
-  @keyframes show {
-    0% {
-      -webkit-transform: translate(0%, 65%);
-              transform: translate(0%, 65%);
-      opacity: 0;
-    }
-    50% {
-      -webkit-transform: translate(0%, 60%);
-              transform: translate(0%, 60%);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translate(0%, 50%);
-              transform: translate(0%, 50%);
-      opacity: 1;
-    }
   }
   .wrapper .hh_left.active {
     width: 100%;
@@ -1221,13 +1072,9 @@ div {
     }
   }
   .wrapper .hh_left .detail {
-    margin-left: 0%;
     width: 90%;
+    margin-left: 0;
     margin: 0 auto;
-    -webkit-transform: translate(0%, 20%);
-            transform: translate(0%, 20%);
-    -webkit-animation: show 1s ease-in-out normal;
-            animation: show 1s ease-in-out normal;
   }
   .wrapper .hh_left .detail h2 {
     font-size: 2.6rem;
@@ -1245,46 +1092,12 @@ div {
     width: 30%;
     margin: 0 auto;
     font-size: 1.6rem;
-    -webkit-transform: translate(0%, 50%);
-            transform: translate(0%, 50%);
+    -webkit-transform: translate(-20%, 0);
+            transform: translate(-20%, 0);
     margin: 10% auto;
   }
   .wrapper .hh_left .detail em {
     display: none;
-  }
-  @-webkit-keyframes show {
-    0% {
-      -webkit-transform: translate(0%, 25%);
-              transform: translate(0%, 25%);
-      opacity: 0;
-    }
-    50% {
-      -webkit-transform: translate(0%, 20%);
-              transform: translate(0%, 20%);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translate(0%, 10%);
-              transform: translate(0%, 10%);
-      opacity: 1;
-    }
-  }
-  @keyframes show {
-    0% {
-      -webkit-transform: translate(0%, 25%);
-              transform: translate(0%, 25%);
-      opacity: 0;
-    }
-    50% {
-      -webkit-transform: translate(0%, 20%);
-              transform: translate(0%, 20%);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translate(0%, 10%);
-              transform: translate(0%, 10%);
-      opacity: 1;
-    }
   }
   .wrapper .hh_left.active {
     width: 100%;
