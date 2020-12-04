@@ -876,6 +876,106 @@ article {
   font-size: 1.6rem;
 }
 
+@media all and (min-width: 2000px) and (max-width: 2600px) {
+  .myself .left_b {
+    -webkit-animation: bottom 15s infinite linear;
+            animation: bottom 15s infinite linear;
+    position: absolute;
+    top: 20%;
+    left: 0;
+  }
+  .myself .left_b b {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    font-size: 14rem;
+    -webkit-transform: rotate(-15deg) translate(0%, 0%);
+            transform: rotate(-15deg) translate(0%, 0%);
+  }
+  @-webkit-keyframes bottom {
+    0% {
+      -webkit-transform: translate(200%, 0%);
+              transform: translate(200%, 0%);
+      top: 20%;
+    }
+    25% {
+      -webkit-transform: translate(100%, 0%);
+              transform: translate(100%, 0%);
+      top: 40%;
+    }
+    50% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+      top: 60%;
+    }
+    70% {
+      -webkit-transform: translate(-100%, 0%);
+              transform: translate(-100%, 0%);
+      top: 80%;
+    }
+    100% {
+      -webkit-transform: translate(-200%, 0%);
+              transform: translate(-200%, 0%);
+      top: 100%;
+    }
+  }
+  @keyframes bottom {
+    0% {
+      -webkit-transform: translate(200%, 0%);
+              transform: translate(200%, 0%);
+      top: 20%;
+    }
+    25% {
+      -webkit-transform: translate(100%, 0%);
+              transform: translate(100%, 0%);
+      top: 40%;
+    }
+    50% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+      top: 60%;
+    }
+    70% {
+      -webkit-transform: translate(-100%, 0%);
+              transform: translate(-100%, 0%);
+      top: 80%;
+    }
+    100% {
+      -webkit-transform: translate(-200%, 0%);
+              transform: translate(-200%, 0%);
+      top: 100%;
+    }
+  }
+  .about2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about2 section {
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+    margin: 0 auto;
+    margin-bottom: 5%;
+    color: #222222;
+    position: static;
+    opacity: 1;
+  }
+  .about2 section.active {
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1);
+    position: static;
+  }
+  .right_b {
+    display: none;
+  }
+}
+
 /* PC Desktop (1043~1400) */
 @media all and (min-width: 1043px) and (max-width: 1400px) {
   .container .about1 div {
