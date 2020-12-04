@@ -143,8 +143,11 @@ header .burger:hover span {
 .pop .pop_wrap .pop_list {
   width: 80%;
   margin: 0 auto;
-  -webkit-transform: translate(0%, 50%);
-          transform: translate(0%, 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .pop .pop_wrap .pop_list a {
@@ -190,8 +193,6 @@ header .burger:hover span {
 .pop.active .pop_list {
   width: 80%;
   margin: 0 auto;
-  -webkit-transform: translate(0%, 50%);
-          transform: translate(0%, 50%);
 }
 
 @-webkit-keyframes burger {
@@ -293,8 +294,6 @@ header .burger:hover span {
   .pop .pop_wrap .pop_list {
     width: 80%;
     margin: 0 auto;
-    -webkit-transform: translate(0%, 100%);
-            transform: translate(0%, 100%);
   }
   .pop .pop_wrap .pop_list a {
     margin: 5% 0;
@@ -331,19 +330,11 @@ header .burger:hover span {
   .pop .pop_wrap .close_btn p {
     font-size: 2.6rem;
   }
-  .pop .pop_wrap .pop_list {
-    -webkit-transform: translate(0%, 80%);
-            transform: translate(0%, 80%);
-  }
   .pop .pop_wrap .pop_list a {
     font-size: 4rem;
   }
   .pop.active .pop_wrap {
     width: 80%;
-  }
-  .pop.active .pop_list {
-    -webkit-transform: translate(0%, 80%);
-            transform: translate(0%, 80%);
   }
 }
 
@@ -361,7 +352,7 @@ html, body {
   left: 0%;
   -webkit-transition: .8s;
   transition: .8s;
-  z-index: -100;
+  z-index: -300;
 }
 
 .pop_all .all_top {
@@ -374,10 +365,12 @@ html, body {
 }
 
 .pop_all .all {
-  -webkit-transform: translate(0, 50%);
-          transform: translate(0, 50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 80%;
-  margin: 10% auto;
   font-family: "Fugaz One", cursive;
   -webkit-transition: .8s;
   transition: .8s;
@@ -586,9 +579,9 @@ article {
           align-items: flex-start;
   z-index: 0;
   left: 0%;
-  top: 40%;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-animation: scale1 .5s ease-in-out;
@@ -809,10 +802,6 @@ article:nth-of-type(3) .scroll_img {
   .pop_all .all_top a img {
     width: 100%;
   }
-  .pop_all .all {
-    -webkit-transform: translate(0, 80%);
-            transform: translate(0, 80%);
-  }
   .pop_all .all .all_list a p {
     color: #fff;
     font-size: 2.4rem;
@@ -825,7 +814,6 @@ article:nth-of-type(3) .scroll_img {
     margin-top: 20%;
   }
   .list {
-    top: 45%;
     -webkit-animation: scale1 .5s ease-in-out;
             animation: scale1 .5s ease-in-out;
   }
@@ -851,12 +839,6 @@ article:nth-of-type(3) .scroll_img {
   }
   .pop_all .all_top a img {
     width: 100%;
-  }
-  .pop_all .all {
-    -webkit-transform: translate(0, 30%);
-            transform: translate(0, 30%);
-    width: 80%;
-    margin: 10% auto;
   }
   .pop_all .all .all_list {
     display: -webkit-box;
@@ -886,9 +868,6 @@ article:nth-of-type(3) .scroll_img {
     width: 30%;
     font-size: 2.6rem;
   }
-  .list {
-    top: 48%;
-  }
   .list a p {
     font-size: 2rem;
   }
@@ -908,10 +887,6 @@ article:nth-of-type(3) .scroll_img {
   }
   .pop_all .all_top a img {
     width: 100%;
-  }
-  .pop_all .all {
-    -webkit-transform: translate(0, 45%);
-            transform: translate(0, 45%);
   }
   .pop_all .all .all_list {
     display: -webkit-box;
@@ -976,19 +951,12 @@ article:nth-of-type(3) .scroll_img {
             transform: translate(-50%, -50%);
     height: 120vh;
   }
-  .list {
-    top: 45%;
-  }
   .list a p {
     font-size: 1.6rem;
     font-family: "Fugaz One", cursive;
   }
   .list a p strong {
     font-size: 3.8rem;
-  }
-  .list {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
   }
   .list a.active {
     -webkit-transform: rotate(-15deg) translate(0%, -20%);
