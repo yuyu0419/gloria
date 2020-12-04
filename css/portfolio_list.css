@@ -579,7 +579,7 @@ article {
           align-items: flex-start;
   z-index: 0;
   left: 0%;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   -webkit-transition: 0.5s;

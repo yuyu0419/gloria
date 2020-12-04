@@ -394,12 +394,14 @@ div {
 }
 
 .wrapper .hh_left .detail {
-  margin-left: 20%;
   color: #fff;
   font-family: "GmarketSansMedium";
-  width: 80%;
-  -webkit-transform: translate(0%, 25%);
-          transform: translate(0%, 25%);
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  left: 10%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
   -webkit-animation: show 1s ease-in-out normal;
           animation: show 1s ease-in-out normal;
 }
@@ -443,36 +445,36 @@ div {
 
 @-webkit-keyframes show {
   0% {
-    -webkit-transform: translate(0%, 40%);
-            transform: translate(0%, 40%);
+    -webkit-transform: translate(0%, -35%);
+            transform: translate(0%, -35%);
     opacity: 0;
   }
   50% {
-    -webkit-transform: translate(0%, 35%);
-            transform: translate(0%, 35%);
+    -webkit-transform: translate(0%, -40%);
+            transform: translate(0%, -40%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translate(0%, 25%);
-            transform: translate(0%, 25%);
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
     opacity: 1;
   }
 }
 
 @keyframes show {
   0% {
-    -webkit-transform: translate(0%, 40%);
-            transform: translate(0%, 40%);
+    -webkit-transform: translate(0%, -35%);
+            transform: translate(0%, -35%);
     opacity: 0;
   }
   50% {
-    -webkit-transform: translate(0%, 35%);
-            transform: translate(0%, 35%);
+    -webkit-transform: translate(0%, -40%);
+            transform: translate(0%, -40%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translate(0%, 25%);
-            transform: translate(0%, 25%);
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
     opacity: 1;
   }
 }
@@ -497,54 +499,56 @@ div {
 .wrapper .hh_right {
   width: 50%;
   height: 100%;
+  position: relative;
   -webkit-animation: right 0.8s linear normal;
           animation: right 0.8s linear normal;
 }
 
 .wrapper .hh_right img {
-  margin-right: 20%;
+  position: absolute;
+  top: 50%;
+  right: 25%;
   text-align: center;
-  margin-top: 20%;
-  -webkit-transform: translate(50%, 100%);
-          transform: translate(50%, 100%);
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
   width: 50%;
-  -webkit-animation: imgOpa 1.5s ease normal;
-          animation: imgOpa 1.5s ease normal;
+  -webkit-animation: imgOpa 1s ease-in-out;
+          animation: imgOpa 1s ease-in-out;
 }
 
 @-webkit-keyframes imgOpa {
   0% {
     opacity: 0;
-    -webkit-transform: translate(50%, 100%) scale(0);
-            transform: translate(50%, 100%) scale(0);
+    -webkit-transform: translate(0%, -50%) scale(0);
+            transform: translate(0%, -50%) scale(0);
   }
-  70% {
-    opacity: 0;
-    -webkit-transform: translate(50%, 100%) scale(0);
-            transform: translate(50%, 100%) scale(0);
+  97% {
+    opacity: 1;
+    -webkit-transform: translate(0%, -50%) scale(1.2);
+            transform: translate(0%, -50%) scale(1.2);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(50%, 100%) scale(1);
-            transform: translate(50%, 100%) scale(1);
+    -webkit-transform: translate(0%, -50%) scale(1);
+            transform: translate(0%, -50%) scale(1);
   }
 }
 
 @keyframes imgOpa {
   0% {
     opacity: 0;
-    -webkit-transform: translate(50%, 100%) scale(0);
-            transform: translate(50%, 100%) scale(0);
+    -webkit-transform: translate(0%, -50%) scale(0);
+            transform: translate(0%, -50%) scale(0);
   }
-  70% {
-    opacity: 0;
-    -webkit-transform: translate(50%, 100%) scale(0);
-            transform: translate(50%, 100%) scale(0);
+  97% {
+    opacity: 1;
+    -webkit-transform: translate(0%, -50%) scale(1.2);
+            transform: translate(0%, -50%) scale(1.2);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(50%, 100%) scale(1);
-            transform: translate(50%, 100%) scale(1);
+    -webkit-transform: translate(0%, -50%) scale(1);
+            transform: translate(0%, -50%) scale(1);
   }
 }
 
