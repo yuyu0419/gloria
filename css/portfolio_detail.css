@@ -922,7 +922,6 @@ div {
     }
   }
   .wrapper .hh_left .detail {
-    margin-left: 0%;
     width: 90%;
     margin: 0 auto;
   }
@@ -1073,7 +1072,6 @@ div {
   }
   .wrapper .hh_left .detail {
     width: 90%;
-    margin-left: 0;
     margin: 0 auto;
   }
   .wrapper .hh_left .detail h2 {
