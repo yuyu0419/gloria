@@ -360,6 +360,7 @@ header a img {
   top: 50%;
   left: 50%;
   margin: 0 auto;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -380,7 +381,7 @@ header a img {
 
 .container .main_click {
   width: 100%;
-  margin: 8% 0;
+  margin: 5% 0;
 }
 
 .container .main_click a {
