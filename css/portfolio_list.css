@@ -353,6 +353,7 @@ html, body {
   -webkit-transition: .8s;
   transition: .8s;
   z-index: -300;
+  opacity: 0;
 }
 
 .pop_all .all_top {
@@ -436,6 +437,7 @@ html, body {
 }
 
 .pop_all.active {
+  opacity: 1;
   position: fixed;
   top: 50;
   left: 50;
