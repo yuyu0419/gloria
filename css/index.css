@@ -366,6 +366,7 @@ header a img {
 }
 
 .container .main_con .main_letter h2 {
+  margin-bottom: 2%;
   color: #fff;
   font-family: "Fugaz One", cursive;
   font-size: 5rem;
@@ -377,11 +378,11 @@ header a img {
   color: #fff;
   font-family: "Fugaz One", cursive;
   font-size: 3rem;
+  margin-bottom: 5%;
 }
 
 .container .main_click {
   width: 100%;
-  margin: 5% 0;
 }
 
 .container .main_click a {
